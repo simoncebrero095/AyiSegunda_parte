@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocalStorageComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    this.grabar_localstorage();
+  }
 
   ngOnInit(): void {
   }
