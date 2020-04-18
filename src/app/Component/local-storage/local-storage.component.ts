@@ -16,7 +16,7 @@ export class LocalStorageComponent implements OnInit {
 
 
 grabar_localstorage (){
-  let nombre: string = 'Fernando'
+  let nombre:string = "fernando";
   let persona ={
     nombre:"juan",
     edad: 18,
