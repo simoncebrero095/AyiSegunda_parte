@@ -19,8 +19,12 @@ export class TaskFormComponent implements OnInit {
     console.log('adding...', newTitle.value, newDescription.value);
     this.taskService.addTask({
       title: newTitle.value,
-      description: newDescription.value
+      description: newDescription.value,
+      hide:true
     });
+    newTitle.value =' ';
+    newDescription.value =' ';
+    newTitle.focus();
     // esta imprimiendo la tareas
     //console.log(this.taskService.getTask())
     return false;
