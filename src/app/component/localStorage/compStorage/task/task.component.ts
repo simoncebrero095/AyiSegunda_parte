@@ -16,7 +16,10 @@ export class TaskComponent implements OnInit {
   }
 
 deleteTask(task:Task){
-  this.taskService.deleteTask(task);
+  if(confirm("Are you sure you want to delete it?")){
+    this.taskService.deleteTask(task);
+  }
+  
 
 }
 
